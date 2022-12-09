@@ -1,0 +1,30 @@
+.header {
+  height: 200px;
+}
+.header__titre {
+  text-align: center;
+}
+.header__form {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem auto;
+}
+.nav__content a {
+  text-decoration: none;
+}
+.nav__logo {
+  width: 150px;
+  height: 30px;
+}
+.nav__login {
+  background-color: #0D6EFD;
+  width: 150px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
