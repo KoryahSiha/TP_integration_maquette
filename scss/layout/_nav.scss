@@ -1,0 +1,25 @@
+nav {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem auto;
+
+    &__content a {
+        text-decoration: none;
+    }
+
+    &__logo {
+        width: 150px;
+        height: 30px;
+    }
+
+    &__login {
+        background-color: #0D6EFD;
+        width: 150px;
+        height: 30px;
+    }
+ 
+
+    
+
+}

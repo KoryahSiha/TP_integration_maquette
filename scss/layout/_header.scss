@@ -1,0 +1,13 @@
+.header {
+    height: 200px;
+
+    &__titre {
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+
+}
