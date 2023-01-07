@@ -1,13 +1,35 @@
 .header {
-    height: 200px;
+    height: 400px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,0.35) 100%), url("image_mer.jpg");
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
     &__titre {
-        text-align: center;
+        padding: 10px;
+        font-size: 2.5em;
     }
 
-    &__form {
-        display: flex;
-        justify-content: center;
+    &__email {
+        background-color: #D9D9D9;
+        color: black;
+        padding: 5px;
+        padding-left: 10px;
     }
 
+    &__email, &__submit {
+        border-radius: 8px;
+        border-color: #dcdcdc;
+        border-width: 1px;
+        padding: 9px;
+    }
+
+    &__submit {
+        background-color: #0D6EFD;
+        color: white;
+    }
 }

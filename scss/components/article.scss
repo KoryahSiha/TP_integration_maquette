@@ -1,0 +1,38 @@
+.articles__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px;
+
+    .article {
+        margin: 0 auto;
+        min-width: 300px;
+        width: 30%;
+    }
+
+        .fa-solid, .fa-puzzle-piece {
+            color: #0D6EFD;
+        }
+    
+        &__titre {
+            height: 35px;
+            font-size: 26px;
+        }
+    
+        &__text {
+            height: 120px;
+            font-size: 16px;
+        }
+
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+    .articles-container {
+        margin: 0 auto;
+        max-width: 1440px;   
+    }
+}

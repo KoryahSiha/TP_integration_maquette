@@ -1,25 +1,22 @@
-nav {
-    
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem auto;
+.nav {
 
-    &__content a {
-        text-decoration: none;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
 
-    &__logo {
-        width: 150px;
-        height: 30px;
-    }
-
-    &__login {
-        background-color: #0D6EFD;
-        width: 150px;
-        height: 30px;
-    }
- 
-
-    
-
+        &__logo {
+            font-size: 1.2em;
+            margin-left: 30px;
+        }
+        
+        &__login {
+            text-decoration: none;
+            padding: 6px;
+            background-color: #0D6EFD;
+            color: white;
+            border-radius: 5px;
+        }
 }
