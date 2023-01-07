@@ -5,19 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Maquette en HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    
+    <title>TP intégration maquette</title>
 </head>
 
 <body>
     <nav class="nav">
-        <ul class="nav__content">
-            <li class="nav__logo">Logo du site</li>
-            <li><a class="nav__login" href="">Se connecter</a></li>
-        </ul>
+        <div class="nav__container">
+            <div class="nav__logo">Logo du site
+            </div>
+
+            <div><a class="nav__login" href="">Se connecter</a></div>
+        </div>
     </nav>
 
     <header class="header">
-        <h1 class="header_titre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <h1 class="header__titre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             <form class="header__form">
                 <input class="header__email" type="email" placeholder="Adresse mail">
                 <button class="header__submit" type="submit">Envoyer</button>
@@ -25,60 +34,67 @@
     </header>
 
     <main>
-        <div class="article">
-            <article class="article__ensemble">
-                <i class="article__icon"></i>
-                    <h3 class="article__titre">Lorem Ipsum.</h3>
-                        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
+        <div class="articles">
+            <div class="articles__container">
+                <article class="article">
+                    <i class="fa-solid fa-puzzle-piece fa-2x"></i>
+                        <h3 class="articles__titre">Lorem Ipsum.</h3>
+                            <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
         
-            <article class="article__ensemble">
-                <i class="article__icon"></i>
-                    <h3 class="article__titre">Lorem Ipsum.</h3>
-                        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
+                <article class="article">
+                    <i class="fa-solid fa-puzzle-piece fa-2x"></i>
+                        <h3 class="articles__titre">Lorem Ipsum.</h3>
+                            <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
         
-            <article class="article__ensemble">
-                <i class="article__icon"></i>
-                    <h3 class="article__titre">Lorem Ipsum.</h3>
-                        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
+                <article class="article">
+                    <i class="fa-solid fa-puzzle-piece fa-2x"></i>
+                        <h3 class="articles__titre">Lorem Ipsum.</h3>
+                            <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
         </div>
 
         <section class="contact">
+            <hr>
             <h2>Nous contacter</h2>
                 <form class="contact__form" method="get">
-                    <div>
+                    <div class="contact__coordonnees">
                         <input class="contact__input" type="text" placeholder="Nom">
-                    </div>
-                    <div>
+                    
                         <input class="contact__input" type="text" placeholder="Prénom">
                     </div>
-                    <div>
+
+                    <div class="contact__coordonnees">
                         <input class="contact__input" type="email" placeholder="Adresse mail">
+                    
+                        <input class="contact__input" type="text" placeholder="N° de téléphone"> 
+                    </div>
+
+                    <div>
+                        <textarea class="contact__message" name="message" placeholder="Tapez votre message..."></textarea>
                     </div>
                     <div>
-                        <input class="contact__input" type="text" placeholder="Numéro de téléphone"> 
-                    </div>
-                    <div>
-                        <textarea class="contact__input" name="message" cols="30" rows="10" placeholder="Tapez votre message"></textarea>
-                    </div>
-                    <div>
-                        <button class="contact__input" type="submit">Envoyer</button>
+                        <button class="contact__submit" type="submit">Envoyer</button>
                     </div>
                 </form>
         </section>
     </main>
 
     <footer class="footer">
-        <ul>
-            <li><a class="footer__about" href="">À propos</a></li>
-            <li><a class="footer__contact" href="">Contact</a></li>
-            <li><a class="footer__use" href="">Conditions générales d’utilisation</a></li>
-            <li><a class="footer__policy" href="">Données personnelles</a></li>
-        </ul>
+        <div class="footer__container">
+            <ul class="footer__liens">
+                <li><a class="footer__about" href="">À propos</a></li>
+                <li><a class="footer__contact" href="">Contact</a></li>
+                <li><a class="footer__use" href="">Conditions générales d’utilisation</a></li>
+                <li><a class="footer__policy" href="">Données personnelles</a></li>
+            </ul>
 
-        <p><a class="footer__site" href="">My Website 2022 - All rights reserved</a></p>
+            <div class="footer__rights">
+                <a class="footer__site" href="">My Website 2022 - All rights reserved</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
