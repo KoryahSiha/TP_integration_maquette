@@ -2,12 +2,6 @@ const contactForm = document.getElementById("contactForm");
 
 contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
-
-    // // récupère les éléments par leur id  
-    // const nameInput = document.getElementById("name");
-    // const emailInput = document.getElementById("email");
-    // const phoneInput = document.getElementById("phone");
-    // const passwordInput = document.getElementById("password");
     
 
     const formData = new FormData(contactForm);
