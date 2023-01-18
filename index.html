@@ -56,28 +56,39 @@
             </div>
         </div>
 
-        <section class="contact">
+        <section>
             <hr>
             <h2>Nous contacter</h2>
-                <form class="contact__form" method="get">
-                    <div class="contact__coordonnees">
-                        <input class="contact__input" type="text" placeholder="Nom">
-                    
-                        <input class="contact__input" type="text" placeholder="Prénom">
+                <form class="form" id="contactForm">
+                    <div class="form__section">
+                        <div>
+                            <input class="form__input" type="text" name="firstName" id="firstName" placeholder="Prénom">
+                            <label class="error-message" for="firstName" id="firstNameError">Veuillez renseigner votre prénom</label>
+                        </div>
+                        <div>
+                            <input class="form__input" type="text" name="lastName" id="lastName" placeholder="Nom">
+                            <label class="error-message" for="lastName" id="lastNameError">Veuillez renseigner votre nom</label>
+                        </div>
                     </div>
 
-                    <div class="contact__coordonnees">
-                        <input class="contact__input" type="email" placeholder="Adresse mail">
+                    <div class="form__section">
+                        <div>
+                            <input class="form__input" type="email" name="email" id="email" placeholder="Adresse email">
+                            <label class="error-message" for="email" id="emailError">Veuillez renseigner une adresse email valide.</label>
+                        </div>
                     
-                        <input class="contact__input" type="text" placeholder="N° de téléphone"> 
+                        <div>
+                            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Numéro de téléphone">
+                            <label class="error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone valide</label>
+                        </div>
                     </div>
 
-                    <div>
-                        <textarea class="contact__message" name="message" placeholder="Tapez votre message..."></textarea>
+                    <div class="form__input--textarea__container">
+                        <textarea class="form__input--textarea" name="message" id="message" placeholder="Tapez votre message..."></textarea>
+                        <label class="error-message" for="message" id="messageError">Veuillez renseigner votre message</label>
                     </div>
-                    <div>
-                        <button class="contact__submit" type="submit">Envoyer</button>
-                    </div>
+                                        
+                    <button class="form__submit" type="submit" id="submit">Envoyer</button>
                 </form>
         </section>
     </main>
@@ -96,5 +107,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
