@@ -1,6 +1,6 @@
-@import 'layout/header';
+@import '_base.scss';
 @import 'layout/nav';
+@import 'layout/header';
+@import 'layout/footer';
 @import 'components/article.scss';
 @import 'components/section.scss';
-@import 'layout/footer.scss';
-@import '_base.scss';

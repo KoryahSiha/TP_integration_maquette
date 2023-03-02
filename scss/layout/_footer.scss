@@ -39,7 +39,7 @@
 }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 744px) {
 
     .footer {
         height: 110px;
@@ -55,5 +55,4 @@
         .footer__contact::before, .footer__use::before, .footer__policy::before {
             visibility: visible;
         }
-
 }

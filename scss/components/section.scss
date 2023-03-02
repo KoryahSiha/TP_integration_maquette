@@ -1,6 +1,12 @@
-.contact {
-    text-align: center;
-    margin-bottom: 120px;
+section {
+    box-sizing: border-box;
+    margin-bottom: 110px;
+    margin-top: 80px;
+
+    h2 {
+        text-align: center;
+        padding-top: 30px;
+    }
 
     hr {
         width: 60%;
@@ -8,59 +14,103 @@
         box-shadow: 2px 2px 2px 1px;
     }
 
-    &__form {
+    .form {
         width: 70%;
-        margin: auto;
-        border-radius: 3px;
+        padding: 16px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        // gap: 16px;
+        border-radius: 7px;
         box-shadow: 10px 10px 5px rgb(204, 204, 204);
         background-color: white;
-        // text-align: left;
     }
 
-        &__coordonnees {
-            margin: auto;
-            width: 85%;
+        .form > div > div {
             display: flex;
-            gap: 15%;
+            flex-direction: column;
+            gap: 8px;
         }
 
-            &__input {
-                height: 30px;
+        .form__section {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+
+            .form__input {
+                padding: 8px 16px;
+                border-radius: 5px;
+                border: none;
+                flex: 1;
+                background-color: #F5F5F5;
+                color: black;
             }
-
-        &__input, &__message, &__submit {
-            margin: 1.2em auto;
-            width: 50%;
-            font-size: 14px;
-            border-radius: 11px;
-            border-width: 2px;
-            background-color: #F5F5F5;
-            color: black;
-        }
-
-        &__input, &__message {
-            padding-left: 10px;
-        }
-
-        &__message {
-            resize: vertical;
-            width: 85%;
-            padding-top: 10px;
-        }
-
-        &__submit {
-            width: 100px;
-            height: 30px;
-            background-color: #0D6EFD;
-            color: white;
-        }
+            
+            .form__input--textarea__container {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                border-radius: 5px;
+            }
+            
+            .form__input--textarea {
+                min-height: 100px;
+                max-height: 300px;
+                resize: vertical;
+                padding: 8px 16px;
+                background-color: #F5F5F5;
+            }
+            
+                ::placeholder {
+                    font-size: 13px;
+                    opacity: 0.3;
+                }
+            
+            .form__submit {
+                width: fit-content;
+                padding: 6px 6px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                
+                background-color: #0D6EFD;
+                color: white;
+            }
+            
+            .error-message {
+                // display: none;
+                color: rgb(195, 13, 13);
+                font-family: sans-serif;
+                font-size: 12px;
+                font-style: italic;
+            }
 }
 
-
-@media screen and (min-width: 750px) {
-
-    .contact__form {
-        width: 50%;
+@media screen and (min-width: 744px) {
+    
+    .form {
+        max-width: 660px;
+        margin: 0 auto !important;
     }
 
+        .form__section {
+            flex-direction: row !important;
+            justify-content: space-between;
+            gap: 0 !important;
+        }
+
+            .form__input {
+                max-height: 37px !important;
+                flex: none;
+            }
+
+                ::placeholder {
+                font-size: 15px !important;
+                }
+
+        .form__input--textarea {
+            width: initial !important;
+            font-size: 15px !important;
+        }
 }
