@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        
+        <title>TP intégration maquette</title>
+    </head>
     
-    <title>TP intégration maquette</title>
-</head>
-
-<body>
+    <body>
+        
+        <div id="myModal" class="myModal">
+            <div class="modal__content">
+                <button class="modal__close-button">X</button>
+                <p class="modal__message">Votre message a bien été envoyé !</p>
+                <p class="modal__cocheVerte">&#9989;</p>
+            </div>
+        </div>
     <nav class="nav">
         <div class="nav__container">
-            <div class="nav__logo">Logo du site
-            </div>
-
+            <div class="nav__logo">Logo du site</div>           
             <div><a class="nav__login" href="">Se connecter</a></div>
         </div>
     </nav>
-
+    
     <header class="header">
         <h1 class="header__titre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <form class="header__form">
-                <input class="header__email" type="email" placeholder="Adresse mail">
-                <button class="header__submit" type="submit">Envoyer</button>
+        <form class="header__form">
+            <input class="header__email" type="email" placeholder="Adresse mail">
+            <button class="header__submit" type="submit">Envoyer</button>
             </form>
     </header>
 
@@ -82,13 +91,16 @@
                             <label class="error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone valide</label>
                         </div>
                     </div>
-
-                    <div class="form__input--textarea__container">
-                        <textarea class="form__input--textarea" name="message" id="message" placeholder="Tapez votre message..."></textarea>
-                        <label class="error-message" for="message" id="messageError">Veuillez renseigner votre message</label>
+                    
+                    <div class="form__section2">
+                        <div class="form__input--textarea__container">
+                            <textarea class="form__input--textarea" name="message" id="message" placeholder="Tapez votre message..."></textarea>
+                            <label class="error-message" for="message" id="messageError">Veuillez renseigner votre message</label>
+                        </div>
                     </div>
-                                        
+                        
                     <button class="form__submit" type="submit" id="submit">Envoyer</button>
+
                 </form>
         </section>
     </main>

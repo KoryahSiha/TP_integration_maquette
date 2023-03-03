@@ -1,35 +1,42 @@
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    margin: auto;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+  display: none;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+  
+  .modal__content {
+    width: 40%;
+    margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #234e79;
+    color: rgb(255, 255, 255);
+    border: thick double #ffffff;
   }
   
-  /* The Close Button */
-  .close {
-    color: #aaa;
+    &__message {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    &__cocheVerte {
+      font-size: 45px;
+      text-align: center;
+    }
+
+    &__close-button {
+    color: #a9a9a9;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+    }
+
+    &__close-button:hover {
     color: black;
-    text-decoration: none;
     cursor: pointer;
-  }
+    }
+
+}

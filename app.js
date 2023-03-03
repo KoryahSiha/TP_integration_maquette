@@ -28,6 +28,17 @@ contactForm.addEventListener('submit', (event) => {
     const messageRegex = /.*/;
     
 
+
+    // modale
+    // récupérer la modale
+    const myModal = document.getElementById("myModal");   
+    // récupérer le bouton submit
+    const button = document.getElementById("submit");
+    // récupérer le bouton qui ferme la modale   
+    const modalCloseButton = document.querySelector('.modal__close-button');
+
+
+
     formData.forEach((value, key) => {
         if (!value) {
             error = true;
@@ -49,14 +60,31 @@ contactForm.addEventListener('submit', (event) => {
                 error = true;
                 return errors[key].style.display = 'block';
             }
-
+            
             error = false;
             errors[key].style.display = 'none';
             userData[key] = value;
         }
     });
-
-    if (!error) {
+    
+    if (!error) {       
+        
+        // quand l'utilisateur clique sur le bouton submit, la modale s'ouvre
+        button.onclick = () => {
+            myModal.style.display = "block";
+        }
+        
+        // quand l'utilisateur clique sur le bouton en croix, la modale se ferme
+        modalCloseButton.addEventListener('click', () => {
+            myModal.style.display = 'none';
+        });
+        
+        // quand l'utilisateur clique n'importe où en dehors de la modale, celle-ci se ferme
+        window.onclick = (event) => {
+            if (event.target === myModal) {
+                myModal.style.display = "none";
+            }
+        } 
         /* Si pas d'erreur, ça envoie les données au serveur */
         axios.post('http://212.83.176.255:3030/contact', userData)
             // Récupération de la réponse en cas de succès.
@@ -68,5 +96,5 @@ contactForm.addEventListener('submit', (event) => {
             });
         console.log(formData)
         contactForm.reset()
-    }
+    }   
 });
