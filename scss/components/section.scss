@@ -60,9 +60,11 @@ section {
                 resize: vertical;
                 padding: 8px 16px;
                 background-color: #F5F5F5;
+                font-family: Robot, serif;
             }
             
                 ::placeholder {
+                    font-family: Robot, serif;
                     font-size: 13px;
                     opacity: 0.3;
                 }
@@ -73,6 +75,7 @@ section {
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
+                font-family: Robot, serif;
                 
                 background-color: #0D6EFD;
                 color: white;
@@ -84,6 +87,7 @@ section {
                 font-family: sans-serif;
                 font-size: 12px;
                 font-style: italic;
+                font-family: Robot, serif;
             }
 }
 
