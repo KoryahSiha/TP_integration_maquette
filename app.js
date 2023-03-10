@@ -69,10 +69,8 @@ contactForm.addEventListener('submit', (event) => {
     
     if (!error) {       
         
-        // quand l'utilisateur clique sur le bouton submit, la modale s'ouvre
-        button.onclick = () => {
-            myModal.style.display = "block";
-        }
+        // quand l'utilisateur clique sur le bouton submit, la modale s'ouvre       
+        myModal.style.display = "block";
         
         // quand l'utilisateur clique sur le bouton en croix, la modale se ferme
         modalCloseButton.addEventListener('click', () => {
